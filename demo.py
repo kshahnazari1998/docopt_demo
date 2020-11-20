@@ -14,7 +14,13 @@ Options:
 from docopt import docopt
 
 opt = docopt(__doc__)
-print(opt)
-print(type(opt))
-print(opt["--arg4"])
-print(type(opt["--arg4"]))
+
+
+def main(opt):
+    print(opt)
+    print(type(opt))
+    print(opt["--arg4"])
+    print(type(opt["--arg4"]))
+
+
+main(opt)
